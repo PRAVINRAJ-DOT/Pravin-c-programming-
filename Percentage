@@ -1,0 +1,51 @@
+Craft a program where users input marks for five subjects—Physics, Chemistry, Biology,
+Mathematics, and Computer. The program swiftly calculates the average and assigns a grade: A,
+B, C, D, E, or F. Also prints the average value in two decimal points.
+Percentage >= 90% A
+Percentage >= 80% B
+Percentage >= 70% C
+Percentage >= 60% D
+Percentage >= 50% E
+Percentage < 50% F
+
+#include <stdio.h>
+
+int main() {
+    float physics, chemistry, biology, mathematics, computer;
+    float total, average;
+
+    printf("Enter marks for Physics: ");
+    scanf("%f", &physics);
+
+    printf("Enter marks for Chemistry: ");
+    scanf("%f", &chemistry);
+
+    printf("Enter marks for Biology: ");
+    scanf("%f", &biology);
+
+    printf("Enter marks for Mathematics: ");
+    scanf("%f", &mathematics);
+
+    printf("Enter marks for Computer: ");
+    scanf("%f", &computer);
+
+    total = physics + chemistry + biology + mathematics + computer;
+    average = total / 5;
+
+    printf("Average = %.2f\n", average);
+
+    if (average >= 90)
+        printf("Grade A\n");
+    else if (average >= 80)
+        printf("Grade B\n");
+    else if (average >= 70)
+        printf("Grade C\n");
+    else if (average >= 60)
+        printf("Grade D\n");
+    else if (average >= 50)
+        printf("Grade E\n");
+    else
+        printf("Grade F\n");
+
+    return 0;
+}
