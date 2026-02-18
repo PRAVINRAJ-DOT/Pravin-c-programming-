@@ -1,0 +1,47 @@
+In a date-related application, users input a number (1-7). The program efficiently determines
+and prints the corresponding day of the week. This allows users to instantly identify the day
+associated with a given week number within the application. Also, verify whether the day is a
+weekday or a holiday
+
+#include <stdio.h>
+
+int main() {
+    int day;
+
+    printf("Enter a number (1-7): ");
+    scanf("%d", &day);
+
+    if(day == 1) {
+        printf("Sunday\n");
+        printf("Holiday\n");
+    }
+    else if(day == 2) {
+        printf("Monday\n");
+        printf("Weekday\n");
+    }
+    else if(day == 3) {
+        printf("Tuesday\n");
+        printf("Weekday\n");
+    }
+    else if(day == 4) {
+        printf("Wednesday\n");
+        printf("Weekday\n");
+    }
+    else if(day == 5) {
+        printf("Thursday\n");
+        printf("Weekday\n");
+    }
+    else if(day == 6) {
+        printf("Friday\n");
+        printf("Weekday\n");
+    }
+    else if(day == 7) {
+        printf("Saturday\n");
+        printf("Holiday\n");
+    }
+    else {
+        printf("Invalid input\n");
+    }
+
+    return 0;
+}
